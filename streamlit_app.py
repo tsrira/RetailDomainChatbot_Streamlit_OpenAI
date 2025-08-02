@@ -4,6 +4,13 @@ from openai import OpenAI
 # Initialize OpenAI client using Streamlit's secrets
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
+
+# --- Page Configuration ---
+st.set_page_config(
+    page_title="Sriram's Retail Bot",
+    page_icon="🛍️",
+    layout="wide"
+)
 # Title of the app
 st.title("🛍️ Sriram's Retail Bot")
 
